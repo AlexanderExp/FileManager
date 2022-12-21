@@ -1,0 +1,33 @@
+﻿<Window x:Class="PeerGrade_Fractals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeerGrade_Fractals"
+        mc:Ignorable="d"
+        Title="MainWindow" Name="WindowMainName" Height="600" Width="1200" MinWidth="1200" MinHeight="600">
+    <Grid Name="MainGrid" Background="Bisque">
+        <Button Content="Pythagorean tree" Name="PythagoreanTreeButton" Margin="301,0,0,9" VerticalAlignment="Bottom" ClickMode="Press" Click="Pythagorean_tree_Click" MaxWidth="150" MaxHeight="40" MinWidth="150" MinHeight="30" FontSize="16" HorizontalAlignment="Left"/>
+        <Button Content="The Koch curve" Name ="TheKochCurveButton" Margin="454,0,0,9" VerticalAlignment="Bottom" ClickMode="Press" Click="Koch_curve_Click_1" MaxWidth="150" MaxHeight="40" RenderTransformOrigin="0.426,0.412" MinHeight="30" MinWidth="150" FontSize="16" HorizontalAlignment="Left"/>
+        <Button Content="Serpinsky's Triangle" Name="SerpinskyTriangleButton" Margin="760,0,0,9" VerticalAlignment="Bottom" ClickMode="Press" MaxWidth="150" MaxHeight="40" MinWidth="150" MinHeight="30" FontSize="16" HorizontalAlignment="Left" Click="SerpinskyTriangleButton_Click"/>
+        <Button Content="Cantor 's Set" Name="CantorSetButton" Margin="912,0,0,9" VerticalAlignment="Bottom" RenderTransformOrigin="0.566,-0.777" ClickMode="Press" MaxWidth="150" MaxHeight="40" MinWidth="150" MinHeight="30" FontSize="16" HorizontalAlignment="Left" Click="CantorSetButton_Click"/>
+        <Button Content="Serpinsky's Carpet" Name="SerpinskyCarpetButton" Margin="607,0,0,9" VerticalAlignment="Bottom" RenderTransformOrigin="0.566,-0.777" ClickMode="Press" MaxWidth="150" MaxHeight="40" MinWidth="150" MinHeight="30" FontSize="16" HorizontalAlignment="Left" Click="SerpinskyCarpetButton_Click"/>
+
+        <Grid Name ="Canv"  Background="AliceBlue" Margin="164,0,0,44">
+
+        </Grid>
+        <TextBox Name ="depthTextBox" HorizontalAlignment="Left" Margin="59,46,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" RenderTransformOrigin="-0.071,-0.643" Height="38" FontSize="24" TextAlignment="Center"/>
+        <Label Content="Depth [0-8]" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="98" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.665,0.44"/>
+        <TextBox x:Name ="leftAngleTextBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="60,177,0,0" Text="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" RenderTransformOrigin="-0.071,-0.643" Height="38" FontSize="24" TextAlignment="Center"/>
+        <TextBox x:Name ="rightAngleTextBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="60,261,0,0" Text="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.071,-0.643" Height="38" FontSize="24" TextAlignment="Center"/>
+        <TextBox x:Name ="coefTextBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="60,340,0,0" Text="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.071,-0.643" Height="38" FontSize="24" TextAlignment="Center"/>
+        <Label Name ="labelCoef"  Content="Coefficient [0,1-1]" Visibility="Hidden" HorizontalAlignment="Left" Margin="8,309,0,0" VerticalAlignment="Top" Width="156" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.665,0.44"/>
+        <Label Name ="labelRightAngle"  Content="Right Angle [0-90]" Visibility="Hidden" HorizontalAlignment="Left" Margin="8,230,0,0" VerticalAlignment="Top" Width="156" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.665,0.44"/>
+        <Label Name ="labelLeftAngle"  Content="Left Angle [0-90]" Visibility="Hidden" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="140" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.665,0.44"/>
+        <Label Name ="labelForCarpet" Content="[0,5] For Carpet" HorizontalAlignment="Left" Margin="32,89,0,0" VerticalAlignment="Top" Height="25" Width="98"/>
+        <TextBox Visibility="Hidden" x:Name ="distanceTextBox" HorizontalAlignment="Left" Margin="49,196,0,0" Text="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" RenderTransformOrigin="-0.071,-0.643" Height="38" FontSize="24" TextAlignment="Center"/>
+        <Label Visibility="Hidden" Name="distanceLabel" Content="Distance [5-100]" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Width="140" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.665,0.44"/>
+
+
+    </Grid>
+</Window>

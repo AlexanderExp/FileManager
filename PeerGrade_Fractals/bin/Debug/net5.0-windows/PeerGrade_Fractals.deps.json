@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PeerGrade_Fractals/1.0.0": {
+        "dependencies": {
+          "WpfLib": "1.0.0"
+        },
+        "runtime": {
+          "PeerGrade_Fractals.dll": {}
+        }
+      },
+      "WpfLib/1.0.0": {
+        "runtime": {
+          "WpfLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PeerGrade_Fractals/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
